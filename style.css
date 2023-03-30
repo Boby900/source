@@ -1,0 +1,73 @@
+.fa-solid{
+    width: 200px;
+}
+#hamburger{
+    display: none;
+}
+body{
+    color: rgb(45, 68, 88);
+    background-color: rgb(215, 220, 224);
+    padding-left: 2em;
+    font-size: 1.3rem;
+}
+header nav ul li{
+    float: left;
+    width: 15%;
+    margin-left: 5em;
+    display: inline-block;
+}
+button,label{
+    background-color:rgb(45, 68, 88) ;
+    color: white;
+    padding: 0.5em;
+}
+header button{
+    float: right;
+}
+section:first-of-type{
+    clear: both;
+}
+section section section{
+    float: left;
+    width: 50%;
+}
+section section + section{
+    padding-top: 2em;
+}
+section section + section section{
+    float: left;
+    width: 25%;
+}
+footer{
+    padding-top: 2em;
+    clear: both;
+}
+a{
+    text-decoration: none;
+    color: rgb(45, 68, 88);
+}
+ul{
+    list-style-type: none;
+}
+@media all and (max-width:700px) {
+    section section section{
+        float: left;
+        width: 100%;
+        font-size: 2rem;
+    }
+    header nav ul li{
+        display: none;
+    }
+    header  span,button{
+        display: none;
+    }
+    section section + section section{
+        float: left;
+        width: 100%;
+    }
+    #hamburger{
+        display: block;
+        margin-bottom: 2em;
+    }
+    
+}
